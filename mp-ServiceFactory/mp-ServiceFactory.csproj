@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>mp_ServiceFactory</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\mp-Domain\mp-Domain.csproj" />
+    <ProjectReference Include="..\mp-RepositoryFactory\mp-RepositoryFactory.csproj" />
+    <ProjectReference Include="..\mp-Service\mp-Service.csproj" />
+  </ItemGroup>
+
+</Project>

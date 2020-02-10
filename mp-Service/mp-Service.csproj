@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>mp_Service</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Bson" Version="2.10.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\mp-DataTransferObject\mp-DataTransferObject.csproj" />
+    <ProjectReference Include="..\mp-Domain\mp-Domain.csproj" />
+    <ProjectReference Include="..\mp-Infrastructure\mp-Infrastructure.csproj" />
+    <ProjectReference Include="..\mp-RepositoryFactory\mp-RepositoryFactory.csproj" />
+  </ItemGroup>
+
+</Project>
