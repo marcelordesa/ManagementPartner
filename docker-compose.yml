@@ -1,0 +1,20 @@
+version: '3'
+services:
+    management-partner:
+        build: .
+        ports:
+            - 32768:8080
+        networks:
+            - default
+
+        depends_on:
+            - mongodb
+        links:
+            - mongodb
+
+    mongodb:
+        image: mongo:3.5
+        ports:
+            - 27017:27017
+        networks:
+            - default
