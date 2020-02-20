@@ -3,7 +3,7 @@ services:
     management-partner:
         build: .
         ports:
-            - 32768:8080
+            - 32768:80
         networks:
             - default
 
