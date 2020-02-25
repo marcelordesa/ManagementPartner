@@ -1,20 +1,19 @@
 version: '3'
+
 services:
     management-partner:
         build: .
         ports:
             - 32768:80
-        networks:
-            - default
 
         depends_on:
-            - mongodb
+            - mongo
         links:
-            - mongodb
+            - mongo
 
-    mongodb:
+    mongo:
+        container_name: mongo
         image: mongo:3.5
+        restart: always
         ports:
             - 27017:27017
-        networks:
-            - default
